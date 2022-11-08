@@ -13,6 +13,7 @@ public class Task {
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
     private Long id;
+    @Column(nullable = true, unique = true, length = 10)
     private String title;
     private String description;
     private LocalDateTime createDate;
